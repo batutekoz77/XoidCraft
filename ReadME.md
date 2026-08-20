@@ -99,7 +99,7 @@ XoidCraft/
 ## 🚀 Getting Started
 
 ### 1. Prerequisites
-- **Visual Studio 2022 / Community Edition** (Build Tools v145)
+- **Visual Studio 2026 / Community Edition** (Build Tools v145)
 - **Windows 10 / 11 SDK**
 - **No external package managers (VCPKG/CMake) needed.**
 
