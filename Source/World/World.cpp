@@ -12,7 +12,6 @@ World::World(std::string filePath) : m_filePath(std::move(filePath)) {
     try {
         const std::filesystem::path filePath(m_filePath);
         const std::filesystem::path directory = filePath.parent_path();
-
         if (!directory.empty()) std::filesystem::create_directories(directory);
     }
     catch (const std::filesystem::filesystem_error& e) { Logger::Error("[World] Failed to create directory: {}", e.what()); }
@@ -59,7 +58,6 @@ bool World::getOverride(int32_t x, int32_t y, int32_t z, BlockData& out) const {
 
 void World::setBlock(int32_t x, int32_t y, int32_t z, uint8_t type, uint8_t meta) {
     std::lock_guard<std::mutex> lock(m_mutex);
-
     m_overrides[Position::encode(x, y, z)] = BlockData{ type, meta };
 }
 
