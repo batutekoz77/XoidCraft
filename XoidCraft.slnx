@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="XoidCraft.vcxproj" Id="ef626e0d-957c-4a75-a3af-6e46b75b2bae" />
+</Solution>

@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "XoidCraft\\x64\\Release\\PacketHandler.obj",
+            "outputs": [
+                "XoidCraft\\x64\\Release\\PacketHandler.hpp.obj.dt.module.json",
+                "XoidCraft\\x64\\Release\\PacketHandler.hpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

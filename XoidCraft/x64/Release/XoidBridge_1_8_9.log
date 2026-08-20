@@ -1,0 +1,47 @@
+﻿  Logger.cpp
+  Application.cpp
+  PacketBuilder.cpp
+  PacketFramer.cpp
+  PacketReader.cpp
+  PacketWriter.cpp
+  TcpServer.cpp
+D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  (compiling source file 'Source/Network/TcpServer.cpp')
+      D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18):
+      the template instantiation context (the oldest one first) is
+          D:\Projects\XoidBridge_1_8_9\Source\Network\TcpServer.cpp(335,21):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              D:\Projects\XoidBridge_1_8_9\Source\Network\TcpServer.cpp(335,21):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'TcpServer::sendLoginSuccess'
+          D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(862,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(1018,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+  PacketHandler.cpp
+  World.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2042 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  XoidBridge_1_8_9.vcxproj -> D:\Projects\XoidBridge_1_8_9\x64\Release\XoidCraft.exe

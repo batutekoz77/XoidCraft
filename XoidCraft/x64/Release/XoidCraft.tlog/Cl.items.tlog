@@ -1,0 +1,9 @@
+D:\Projects\XoidCraft\Source\Logger\Logger.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\Logger.obj
+D:\Projects\XoidCraft\Source\Main\Application.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\Application.obj
+D:\Projects\XoidCraft\Source\Network\PacketBuilder.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\PacketBuilder.obj
+D:\Projects\XoidCraft\Source\Network\PacketFramer.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\PacketFramer.obj
+D:\Projects\XoidCraft\Source\Network\PacketReader.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\PacketReader.obj
+D:\Projects\XoidCraft\Source\Network\PacketWriter.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\PacketWriter.obj
+D:\Projects\XoidCraft\Source\Network\TcpServer.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\TcpServer.obj
+D:\Projects\XoidCraft\Source\Protocol\PacketHandler.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\PacketHandler.obj
+D:\Projects\XoidCraft\Source\World\World.cpp;D:\Projects\XoidCraft\XoidCraft\x64\Release\World.obj

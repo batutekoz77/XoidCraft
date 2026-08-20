@@ -1,0 +1,41 @@
+﻿  Application.cpp
+  TcpServer.cpp
+D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  (compiling source file 'Source/Network/TcpServer.cpp')
+      D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xutility(5094,18):
+      the template instantiation context (the oldest one first) is
+          D:\Projects\XoidCraft\Source\Network\TcpServer.cpp(353,21):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              D:\Projects\XoidCraft\Source\Network\TcpServer.cpp(353,21):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'TcpServer::sendLoginSuccess'
+          D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(862,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          D:\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xstring(1018,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+  Generating code
+  7 of 2454 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    15 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  XoidCraft.vcxproj -> D:\Projects\XoidCraft\x64\Release\XoidCraft.exe

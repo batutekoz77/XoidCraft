@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Main\Application.cpp" />
+    <ClCompile Include="Source\Network\TcpServer.cpp" />
+    <ClCompile Include="Source\Network\PacketReader.cpp" />
+    <ClCompile Include="Source\Network\PacketFramer.cpp" />
+    <ClCompile Include="Source\Protocol\PacketHandler.cpp" />
+    <ClCompile Include="Source\Network\PacketWriter.cpp" />
+    <ClCompile Include="Source\Network\PacketBuilder.cpp" />
+    <ClCompile Include="Source\World\World.cpp" />
+    <ClCompile Include="Source\Logger\Logger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Network\TcpServer.hpp" />
+    <ClInclude Include="Source\Network\PacketReader.hpp" />
+    <ClInclude Include="Source\Network\PacketFramer.hpp" />
+    <ClInclude Include="Source\Protocol\ConnectionState.hpp" />
+    <ClInclude Include="Source\Protocol\PacketHandler.hpp" />
+    <ClInclude Include="Source\Network\PacketWriter.hpp" />
+    <ClInclude Include="Source\Network\PacketBuilder.hpp" />
+    <ClInclude Include="Source\Protocol\Position.hpp" />
+    <ClInclude Include="Source\World\World.hpp" />
+    <ClInclude Include="Source\Main\Config.hpp" />
+    <ClInclude Include="Source\Logger\Logger.hpp" />
+  </ItemGroup>
+</Project>
