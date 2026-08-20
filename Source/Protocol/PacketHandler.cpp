@@ -48,12 +48,9 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
 
             try {
                 const int32_t keepAliveId = reader.readVarInt();
-
                 Logger::Debug("[Play] Keep Alive: ID={}", keepAliveId);
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Keep Alive parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Keep Alive parse error: {}", e.what()); }
 
             break;
         }
@@ -63,12 +60,9 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
 
             try {
                 const std::string message = reader.readString();
-
                 Logger::Info("[Play] Chat Message: {}", message);
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Chat Message parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Chat Message parse error: {}", e.what()); }
 
             break;
         }
@@ -110,9 +104,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     break;
                 }
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Use Entity parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Use Entity parse error: {}", e.what()); }
 
             break;
         }
@@ -122,12 +114,9 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
 
             try {
                 const bool onGround = reader.readBool();
-
                 Logger::Debug("[Play] Player: OnGround={}", onGround);
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Player parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Player parse error: {}", e.what()); }
 
             break;
         }
@@ -149,9 +138,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     onGround
                 );
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Player Position parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Player Position parse error: {}", e.what()); }
 
             break;
         }
@@ -171,9 +158,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     onGround
                 );
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Player Look parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Player Look parse error: {}", e.what()); }
 
             break;
         }
@@ -199,9 +184,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     onGround
                 );
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Player Position And Look parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Player Position And Look parse error: {}", e.what()); }
 
             break;
         }
@@ -251,9 +234,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     break;
                 }
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Digging parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Digging parse error: {}", e.what()); }
 
             break;
         }
@@ -270,9 +251,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
 
                 Logger::Info("[Play] Held Item Change: Slot={}", slot);
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Held Item Change parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Held Item Change parse error: {}", e.what()); }
 
             break;
         }
@@ -422,9 +401,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
                     walkingSpeed
                 );
             }
-            catch (const std::exception& e) {
-                Logger::Error("[Play] Player Abilities parse error: {}", e.what());
-            }
+            catch (const std::exception& e) { Logger::Error("[Play] Player Abilities parse error: {}", e.what()); }
 
             break;
         }
@@ -465,11 +442,7 @@ void PacketHandler::handlePacket(const RawPacket& packet) {
             break;
 
         default:
-            Logger::Debug(
-                "[Packet] Unknown Play packet: ID {} | Payload: {} bytes",
-                packet.id,
-                packet.payload.size()
-            );
+            Logger::Debug("[Packet] Unknown Play packet: ID {} | Payload: {} bytes", packet.id, packet.payload.size());
             break;
         }
 
